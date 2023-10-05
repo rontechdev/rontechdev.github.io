@@ -1,0 +1,3 @@
+[submodule "calculator_app"]
+	path = calculator_app
+	url = git@github.com:rontechdev/calculator_app.git
