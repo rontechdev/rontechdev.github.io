@@ -107,9 +107,27 @@ div p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .child-features {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
     display: flex;
-    gap: 6rem;
+    justify-content: space-evenly;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.skills-section h2 {
+    margin-bottom: 80px;
+}
+
+.skill {
+    margin: 40px;
+    padding: auto;
 }
