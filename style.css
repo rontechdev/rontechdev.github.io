@@ -101,6 +101,59 @@ div p {
     padding: 80px;
 }
 
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 80px;
+   
+    position: relative;
+    overflow: hidden;
+}
+
+/* About Text styles */
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Decorative Icons styles */
+.decorative-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon i {
+    font-size: 36px;
+    color: #007BFF;
+}
+
+.icon p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
 /* Skills */
 
 .skills-section {
