@@ -271,6 +271,7 @@ a {
     padding: 80px;
     text-align: center;
 }
+
 .contact-form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -278,11 +279,14 @@ a {
     max-width: 800px;
     margin: 0 auto;
 }
+
 .input-container {
     position: relative;
     margin-bottom: 30px;
 }
-input, textarea {
+
+input,
+textarea {
     width: 100%;
     padding: 15px;
     background-color: transparent;
@@ -291,6 +295,7 @@ input, textarea {
     color: #fff;
     font-size: 16px;
 }
+
 label {
     position: absolute;
     top: 0;
@@ -301,37 +306,28 @@ label {
     color: #aaa;
     pointer-events: none;
 }
+
 /* Focus styles for input */
 .input-container input:focus,
 .input-container textarea:focus {
     outline: none; /* Remove the default focus outline */
     border-bottom: 1px solid #ef744b; /* Add a different border color when focused */
 }
-/* Style for autofill inputs in WebKit browsers */
-.input-container input:-webkit-autofill,
-.input-container textarea:-webkit-autofill {
-    box-shadow: 0 0 0 100px #121212 inset; /* Add a background color for autofill */
-    -webkit-text-fill-color: #fff !important; /* Force text color to be white */
-}
-/* Adjust label position for autofill inputs */
-.input-container input:-webkit-autofill + label,
-.input-container textarea:-webkit-autofill + label {
-    transform: translateY(-100%) scale(0.8);
-    color: #ef744b;
-} 
+
 .input-container:focus-within label,
 input:not(:placeholder-shown) + label {
     transform: translateY(-100%) scale(0.8);
     color: #ef744b;
 }
+
 /* Hover and focus styles for the submit button */
-button:hover {
-    /* background-color: #d6553d; */
-}
+
+
 button:focus {
     /* background-color: #d6553d; */
     outline: none;
 }
+
 .btn {
     padding: 15px 30px;
     background-color: #ef744b;
@@ -341,7 +337,6 @@ button:focus {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 
 @media only screen and (max-width: 1000px) {
     .hamburger {
@@ -353,27 +348,34 @@ button:focus {
         margin: 20px;
         align-self: flex-end;
     }
+
     ul {
         display: none;
         background-color: #2b2c38;
-        margin: 0ppx;
+        margin: 0;
     }
+
     ul.show {
         display: block;
     }
+
     nav {
         display: flex;
         flex-direction: column-reverse;
         background-color: #2b2c38;
     }
+
     .logo {
         display: none;
     }
 }
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 80px;
 }
+
+
 
