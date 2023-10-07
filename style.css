@@ -204,14 +204,17 @@ p {
 /* skills ends */
 
 .project-container {
-    display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
+    display: flex; 
+    justify-content: space-between;
+     flex-wrap: wrap; 
+   
+    }
+   
   
   .project {
     position: relative;
     overflow: hidden;
+   
   }
   
   .project-image {
@@ -219,7 +222,11 @@ p {
     height: auto;
     transition: transform 0.3s;
   }
-  
+  .project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
   .project-details {
     position: absolute;
     top: 0;
@@ -275,11 +282,7 @@ p {
         flex-wrap: wrap;
     }
 }
-.project-image {
-    margin-top: 25px;
-    width: 250px;
-    border-radius: 125px;
-}
+
 hr {
     margin-left: 20px;
     margin-right: 20px;
@@ -312,7 +315,7 @@ a {
 
 
 .contact-section {
-    background-color: #121212;
+    background-color: #070000;
     color: #ffffff;
     padding: 80px;
     text-align: center;
