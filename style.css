@@ -6,7 +6,7 @@ section {
     background-color: white;
 }
 .hero {
-    background-color: #1c1d25;
+    background-color: #000000;
     width: 100%;
     height: 100vh;
     color: white;
@@ -203,19 +203,65 @@ p {
 
 /* skills ends */
 
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 2fr 2fr));
+    gap: 20px;
+  }
+  
+  .project {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .project:hover .project-image {
+    transform: scale(1.1);
+  }
+  
+  .project:hover .project-details {
+    opacity: 1;
+  }
+  
+  /* Style links and text within project-details as needed */
+  .project-details a {
+    text-decoration: none;
+    color: #ef744b;
+  }
+  
 
 
-
-.project-card {
+/* .project-card {
     width: 300px;
     height: 500px;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
-}
-.project-container {
+} */
+/* .project-container {
     display: flex;
     justify-content: space-around;
-}
+} */
 
 
 
