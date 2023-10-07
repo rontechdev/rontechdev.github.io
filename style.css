@@ -189,3 +189,59 @@ div p {
     margin-bottom: 10px; /* Space between the icon and the title */
   }
   
+/* contact */
+
+.contact-section {
+    background: black;
+    height: 100vh;
+}
+
+/* Floating label styles */
+.input-container {
+    position: relative; 
+    margin-bottom: 20px;
+    display: inline;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+    
+}
+
+.input-container input, .input-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    /* border: 1px solid #ddd; */
+    border-top: none;
+    border-left:  none;
+    border-right: none;
+    border-radius: 5px;
+
+}
+
+/* Style for focused input */
+.input-container input:focus, .input-container textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Move label up when input is focused */
+.input-container input:focus + label, .input-container textarea:focus + label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    background-color: white;
+    padding: 0 5px;
+}
+
+/* Style for non-empty inputs */
+.input-container input:valid + label, .input-container textarea:valid + label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    background-color: white;
+    padding: 0 5px;
+}
