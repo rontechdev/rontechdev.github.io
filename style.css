@@ -205,7 +205,7 @@ p {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 2fr 2fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
   
