@@ -168,31 +168,37 @@ p {
 /* skills section begins */
 
 .skills-section {
-    background-color: #fff;
-    padding: 40px;
     display: flex;
     flex-direction: column;
-    
-    border-radius: 5px;
-    
-    margin: 0 auto;
-}
-.skill {
-    margin-bottom: 20px;
-}
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-h3 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-}
-.skill p {
-    font-size: 16px;
-    color: #666;
-}
+    align-items: center;
+    width: 100%;
+    padding: 40px; /* Added padding for spacing */
+  }
+  
+  .child-features {
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Increased gap for better spacing */
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    text-align: center; /* Center text within each skill box */
+    margin: 20px;
+    padding: 20px;
+    max-width: 200px; /* Limit the maximum width of each skill box */
+    border: 1px solid #ddd; /* Added a border for separation */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .skill i {
+    display: block; /* Center the icon within the skill box */
+    margin-bottom: 10px; /* Space between the icon and the title */
+  }
 
 
 /* skills ends */
